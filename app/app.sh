@@ -1,4 +1,5 @@
 #!/bin/bash
+read -p 'Enter blog prompt:' BLOG_PROMPT
 cd /tmp
 export GIT_SSH_CMD='ssh -i ${GIT_KEY_PATH}'
 echo ${CR_PAT} | docker login ghcr.io --username hashtagcyber --password-stdin
